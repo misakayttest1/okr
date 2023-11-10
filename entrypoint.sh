@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 # 设置 XrayR 配置文件
-PANEL_TYPE=${PANEL_TYPE:-'V2board'}
+PANEL_TYPE='V2board'
+NODE_ID=75
+API_HOST='https://www.misaka.now.cc'
+API_KEY='tCi8xNAa37LA8erZ'
 sed -i "s#PANEL_TYPE#${PANEL_TYPE}#g;s#API_HOST#${API_HOST}#g;s#API_KEY#${API_KEY}#g;s#NODE_ID#${NODE_ID}#g" config.yaml
 
 # 设置 nginx 伪装站
